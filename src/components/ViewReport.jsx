@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { db } from '../config/firebase';
 import { doc, getDoc } from 'firebase/firestore';
-import { Printer, ArrowLeft, Loader2, Sparkles, AlertCircle } from 'lucide-react';
+import { Printer, ArrowLeft, Loader2, Sparkles, AlertCircle, Sun } from 'lucide-react';
 
 export default function ViewReport() {
   const { id } = useParams();
@@ -70,8 +70,8 @@ export default function ViewReport() {
         {/* Top Controls Bar (Hidden during printing) */}
         <div className="top-actions-bar no-print">
           <Link to="/" className="logo-link">
-            <Sparkles size={20} style={{ color: 'var(--accent)' }} />
-            <span>ReportCraft AI</span>
+            <Sun size={20} style={{ color: '#F1B51C' }} />
+            <span>Argentum AI</span>
           </Link>
 
           <div className="right-controls">
@@ -87,6 +87,8 @@ export default function ViewReport() {
                 <option value="corporate-light">🏢 Corporate Light</option>
                 <option value="minimal-mono">📟 Minimal Mono</option>
                 <option value="executive-pitch">📊 Executive Pitch</option>
+                <option value="argentine-sky">☀️ Argentine Sky</option>
+                <option value="brutalist-yellow">🚧 Brutalist Yellow</option>
               </select>
             </div>
 
@@ -215,7 +217,7 @@ export default function ViewReport() {
 
           {/* Footer Info */}
           <footer className="report-footer">
-            <span>ReportCraft AI · Impulsado por Gemini 2.5 Flash</span>
+            <span>Argentum AI · Impulsado por Gemini 2.5 Flash</span>
             <span>Documento Web Interactivo</span>
           </footer>
         </article>

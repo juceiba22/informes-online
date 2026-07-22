@@ -21,7 +21,7 @@
   font-family: 'Outfit', sans-serif;
   font-size: 38px;
   font-weight: 800;
-  background: var(--primary-gradient);
+  background: linear-gradient(135deg, #FFFFFF 30%, #74ACDF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 12px;
@@ -63,8 +63,8 @@
 
 .textarea-input:focus {
   outline: none;
-  border-color: #818cf8;
-  box-shadow: 0 0 0 3px rgba(129, 140, 248, 0.15);
+  border-color: #74ACDF;
+  box-shadow: 0 0 0 3px rgba(116, 172, 223, 0.15);
 }
 
 /* Theme Selector Grid */
@@ -93,8 +93,8 @@
 }
 
 .theme-card.active {
-  border-color: #6366f1;
-  background: rgba(99, 102, 241, 0.05);
+  border-color: #74ACDF;
+  background: rgba(116, 172, 223, 0.05);
 }
 
 .theme-card-title {
@@ -146,7 +146,7 @@
   gap: 10px;
   width: 100%;
   padding: 16px;
-  background: var(--primary-gradient);
+  background: linear-gradient(135deg, #74ACDF 0%, #F1B51C 100%);
   border: none;
   border-radius: 12px;
   color: white;
@@ -154,12 +154,12 @@
   font-weight: 700;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 4px 15px rgba(116, 172, 223, 0.3);
 }
 
 .btn-submit:hover:not(:disabled) {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
+  box-shadow: 0 6px 20px rgba(116, 172, 223, 0.5);
   opacity: 0.95;
 }
 

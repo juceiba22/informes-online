@@ -61,6 +61,36 @@
   --shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
 }
 
+.theme-argentine-sky {
+  --bg: #F0F4F8;
+  --surface-1: #FFFFFF;
+  --surface-2: #E1ECF7;
+  --surface-3: #D0E2F2;
+  --accent: #74ACDF;
+  --accent-dim: rgba(116, 172, 223, 0.15);
+  --text: #1E293B;
+  --text-muted: #64748B;
+  --border: #D0DDEC;
+  --font-family: 'Outfit', 'Inter', system-ui, sans-serif;
+  --font-mono: monospace;
+  --shadow: 0 10px 30px -10px rgba(116, 172, 223, 0.3);
+}
+
+.theme-brutalist-yellow {
+  --bg: #121212;
+  --surface-1: #1E1E1E;
+  --surface-2: #2D2D2D;
+  --surface-3: #3D3D3D;
+  --accent: #F1B51C;
+  --accent-dim: rgba(241, 181, 28, 0.15);
+  --text: #FFFFFF;
+  --text-muted: #A3A3A3;
+  --border: #F1B51C;
+  --font-family: 'DM Mono', monospace;
+  --font-mono: 'DM Mono', monospace;
+  --shadow: 4px 4px 0px 0px #F1B51C;
+}
+
 /* Common themes configuration */
 .theme-container {
   min-height: 100vh;

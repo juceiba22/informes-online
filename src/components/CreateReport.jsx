@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { db } from '../config/firebase';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import { parseTextToReport } from '../services/gemini';
-import { Sparkles, Copy, ExternalLink, Check, FileText, Loader2 } from 'lucide-react';
+import { Sparkles, Copy, ExternalLink, Check, FileText, Loader2, Sun } from 'lucide-react';
 
 const THEMES = [
   {
@@ -42,6 +42,25 @@ const THEMES = [
     accentColor: '#38BDF8',
     textColor: '#F8FAFC',
     borderColor: 'rgba(255,255,255,0.1)'
+  },
+  {
+    id: 'argentine-sky',
+    name: 'Argentine Sky',
+    desc: 'Estética patria, fondos claros, celeste cielo y detalles en amarillo sol.',
+    bgColor: '#F0F4F8',
+    accentColor: '#74ACDF',
+    textColor: '#1E293B',
+    borderColor: '#D0DDEC'
+  },
+  {
+    id: 'brutalist-yellow',
+    name: 'Brutalist Yellow',
+    desc: 'Estética retro brutalista, alto contraste, bordes amarillos y fondo oscuro.',
+    bgColor: '#121212',
+    accentColor: '#F1B51C',
+    textColor: '#FFFFFF',
+    borderColor: '#F1B51C',
+    font: 'monospace'
   }
 ];
 
@@ -93,12 +112,12 @@ export default function CreateReport() {
     <div style={{ backgroundColor: '#030712', minHeight: '100vh', padding: '1px 0' }}>
       <div className="creator-container animate-fade-in">
         <div className="creator-header">
-          <div style={{ display: 'inline-flex', padding: '8px', background: 'rgba(99, 102, 241, 0.1)', borderRadius: '12px', color: '#818cf8', marginBottom: '16px' }}>
-            <Sparkles size={28} />
+          <div style={{ display: 'inline-flex', padding: '8px', background: 'rgba(241, 181, 28, 0.15)', borderRadius: '12px', color: '#F1B51C', marginBottom: '16px' }}>
+            <Sun size={28} />
           </div>
-          <h1 className="creator-title">ReportCraft AI</h1>
+          <h1 className="creator-title">Argentum AI</h1>
           <p className="creator-subtitle">
-            Convierte notas desordenadas, texto plano o código en reportes ejecutivos interactivos listos para compartir.
+            Convierte tus notas, textos o borradores en reportes ejecutivos interactivos listos para compartir.
           </p>
         </div>
 
