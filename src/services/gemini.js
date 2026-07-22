@@ -20,7 +20,7 @@ export async function parseTextToReport(rawText) {
 
   try {
     const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-1.5-flash',
       contents: `Transforma el siguiente contenido en un informe ejecutivo perfectamente estructurado:\n\n${rawText}`,
       config: {
         systemInstruction: `Eres un sintetizador técnico y ejecutivo experto. Analiza el texto o código del usuario y organízalo dentro del esquema JSON especificado. Crea un título impactante, un subtítulo, un tag o badge corto, un resumen ejecutivo de un párrafo, y agrupa el contenido en secciones claras (usando tipos: 'table', 'cards', 'bullets' o 'code'). Si hay código o estructuras de carpetas/archivos, usa 'code'.`,
